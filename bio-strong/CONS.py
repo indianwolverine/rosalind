@@ -7,6 +7,7 @@ if len(sys.argv) != 2:
 else:
     with open(sys.argv[1], 'r') as f:
         contents = f.readlines()
+    f.close()
     A, T, G, C, new_contents = [], [], [], [], []
 
     i = 0
